@@ -1,19 +1,21 @@
 ---
 title: "China Major Cities GDP-Top 10"
-author: "Amber He"
+author: "Jianing He"
 date: "Dec.18, 2016"
 output: html_document
 ---
-## Data for Generate the Map
+## Data for Generating the Map
 ```{r df, echo = FALSE}
 df <- data.frame("Name" = c("Shanghai", "Beijing","Guangzhou", "Shenzhen", "Tianjin", "Chongqing", "Shuzhou", "Chengdu", "Wuhan", "Hangzhou"),
                  "GDP" = c(11887, 10578.30, 8285.27, 7550.11, 7884.04, 7237.90, 7088.43, 5327.58, 4921.86, 4498.75),
                  "Longitude" = c(121.43333, 116.41667, 113.23333, 114.06667, 117.20000, 106.45000, 120.37000, 104.06667, 114.31667, 120.20000),
                  "Lattitude" = c(31.22000, 39.91667, 23.16667, 22.61667, 39.13333, 29.56667,31.19000, 30.66667, 30.51667, 30.26667))
 ```
+
 ```{r dfDisplay, echo = FALSE, comment = ""}
 df
 ```
+
 ## Interactive Map
 ```{r map, echo = TRUE}
 library(leaflet)

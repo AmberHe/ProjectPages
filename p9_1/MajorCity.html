@@ -9,7 +9,7 @@
 <meta name="generator" content="pandoc" />
 
 
-<meta name="author" content="Amber He" />
+<meta name="author" content="Jianing He" />
 
 
 <title>China Major Cities GDP-Top 10</title>
@@ -125,14 +125,14 @@ $(document).ready(function () {
 
 
 <h1 class="title toc-ignore">China Major Cities GDP-Top 10</h1>
-<h4 class="author"><em>Amber He</em></h4>
+<h4 class="author"><em>Jianing He</em></h4>
 <h4 class="date"><em>Dec.18, 2016</em></h4>
 
 </div>
 
 
-<div id="data-for-generate-the-map" class="section level2">
-<h2>Data for Generate the Map</h2>
+<div id="data-for-generating-the-map" class="section level2">
+<h2>Data for Generating the Map</h2>
 <pre><code>        Name      GDP Longitude Lattitude
 1   Shanghai 11887.00  121.4333  31.22000
 2    Beijing 10578.30  116.4167  39.91667
@@ -153,8 +153,8 @@ my_map &lt;- df %&gt;%
     addTiles() %&gt;%
     addCircleMarkers(lng = df$Longitude, lat = df$Lattitude, radius = sqrt(df$GDP)/10, weight = 1, popup = df$Name, clusterOptions = TRUE) 
 my_map</code></pre>
-<div id="htmlwidget-9deb40bddf7c9246e2af" style="width:672px;height:480px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-9deb40bddf7c9246e2af">{"x":{"calls":[{"method":"addTiles","args":["http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"maxNativeZoom":null,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"continuousWorld":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":null,"unloadInvisibleTiles":null,"updateWhenIdle":null,"detectRetina":false,"reuseTiles":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap\u003c/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA\u003c/a>"}]},{"method":"addCircleMarkers","args":[[31.22,39.91667,23.16667,22.61667,39.13333,29.56667,31.19,30.66667,30.51667,30.26667],[121.43333,116.41667,113.23333,114.06667,117.2,106.45,120.37,104.06667,114.31667,120.2],[10.9027519461831,10.2850862903526,9.10234585148246,8.68913689614797,8.87921167671996,8.50758485117839,8.41928144202342,7.29902733246013,7.01559690974332,6.70727217279872],null,null,{"lineCap":null,"lineJoin":null,"clickable":true,"pointerEvents":null,"className":"","stroke":true,"color":"#03F","weight":1,"opacity":0.5,"fill":true,"fillColor":"#03F","fillOpacity":0.2,"dashArray":null},true,null,["Shanghai","Beijing","Guangzhou","Shenzhen","Tianjin","Chongqing","Shuzhou","Chengdu","Wuhan","Hangzhou"]]}],"limits":{"lat":[22.61667,39.91667],"lng":[104.06667,121.43333]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-50b1269c676bd781582e" style="width:672px;height:480px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-50b1269c676bd781582e">{"x":{"calls":[{"method":"addTiles","args":["http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"maxNativeZoom":null,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"continuousWorld":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":null,"unloadInvisibleTiles":null,"updateWhenIdle":null,"detectRetina":false,"reuseTiles":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap\u003c/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA\u003c/a>"}]},{"method":"addCircleMarkers","args":[[31.22,39.91667,23.16667,22.61667,39.13333,29.56667,31.19,30.66667,30.51667,30.26667],[121.43333,116.41667,113.23333,114.06667,117.2,106.45,120.37,104.06667,114.31667,120.2],[10.9027519461831,10.2850862903526,9.10234585148246,8.68913689614797,8.87921167671996,8.50758485117839,8.41928144202342,7.29902733246013,7.01559690974332,6.70727217279872],null,null,{"lineCap":null,"lineJoin":null,"clickable":true,"pointerEvents":null,"className":"","stroke":true,"color":"#03F","weight":1,"opacity":0.5,"fill":true,"fillColor":"#03F","fillOpacity":0.2,"dashArray":null},true,null,["Shanghai","Beijing","Guangzhou","Shenzhen","Tianjin","Chongqing","Shuzhou","Chengdu","Wuhan","Hangzhou"]]}],"limits":{"lat":[22.61667,39.91667],"lng":[104.06667,121.43333]}},"evals":[],"jsHooks":[]}</script>
 </div>
 
 
