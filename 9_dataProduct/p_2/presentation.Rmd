@@ -1,0 +1,26 @@
+---
+title: "Presentation"
+author: "Amber He"
+date: "Dec.26 2016"
+output: ioslides_presentation
+---
+
+## Introduction
+1.*Dataset:iris*  
+This famous (Fisher's or Anderson's) iris data set gives the measurements in centimeters of the variables sepal length and width and petal length and width, respectively, for 50 flowers from each of 3 species of iris.   
+2.*Brief information*
+```{r, comment=""}
+summary(iris)
+```
+
+## Scater3d plot
+
+```{r, echo = F, message=FALSE, warning=FALSE}
+library(plotly)
+data(iris)
+plot_ly(iris, x = iris$Sepal.Length, y = iris$Sepal.Width, z = iris$Petal.Length, type = "scatter3d", mode = "markers", color = iris$Species)
+```
+
+## Thank you!
+
+
